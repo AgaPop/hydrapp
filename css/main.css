@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Roboto:500,700&display=swap&subset=latin-ext");
 html {
   line-height: 1.15;
   /* 1 */
@@ -309,14 +310,90 @@ template {
 
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  background: #3767AD; }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
 body {
-  color: #F9C802;
-  background: #000; }
+  color: #000000;
+  background: #FFFFFF;
+  min-height: 100vh;
+  padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Roboto", sans-serif; }
+
+.main {
+  background: #3767AD;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 375px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.counter {
+  margin: 203px 48px 0 47px;
+  width: 280px;
+  height: 280px;
+  background: url("../assets/img/water-glass.svg") center center;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .counter__value {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 112px;
+    padding-top: 64px; }
+
+.button-add {
+  margin: 48px auto 37px auto;
+  padding: 12px;
+  border-radius: 4px;
+  border: none;
+  background: #fff;
+  min-width: 214px;
+  height: 47px;
+  font-weight: 500;
+  font-size: 18px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
+.button-delete {
+  color: #F5E5E7;
+  background-color: Transparent;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px; }
 
 /*# sourceMappingURL=main.css.map */
